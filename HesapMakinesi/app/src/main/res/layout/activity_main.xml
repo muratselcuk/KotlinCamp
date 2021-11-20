@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="birinci sayıyı giriniz"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="İkinci Sayıyı giriniz"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="189dp"
+        android:text="Sonuc: 0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="63dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <Button
+            android:id="@+id/toplama"
+            android:layout_width="41dp"
+            android:layout_height="49dp"
+            android:onClick="topla"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/carpma"
+            android:layout_width="41dp"
+            android:layout_height="49dp"
+            android:onClick="carpma"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/cikarma"
+            android:layout_width="41dp"
+            android:layout_height="49dp"
+            android:onClick="cikarma"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/bolme"
+            android:layout_width="41dp"
+            android:layout_height="49dp"
+            android:onClick="bolme"
+            android:text="/" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

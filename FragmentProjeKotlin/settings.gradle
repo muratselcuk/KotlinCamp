@@ -1,0 +1,2 @@
+rootProject.name='FragmentProjeKotlin'
+include ':app'

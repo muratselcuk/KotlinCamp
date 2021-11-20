@@ -1,0 +1,2 @@
+rootProject.name='HavucOyunuKotlin'
+include ':app'
